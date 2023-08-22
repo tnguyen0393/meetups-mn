@@ -16,7 +16,7 @@ const NewMeetupPage = () => {
         },
       }
     ).then(() => {
-      history.replace("/");
+      history.replace("/meetups-mn/");
     });
   };
   return (

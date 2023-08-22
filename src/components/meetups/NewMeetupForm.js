@@ -8,7 +8,7 @@ function NewMeetupForm({ onAddMeetup }) {
   const addressInputRef = useRef();
   const descriptionInputRef = useRef();
 
-  const submitHanblder = (event) => {
+  const submitHandler = (event) => {
     event.preventDefault();
     const enteredTitle = titleInputRef.current.value;
     const enteredImage = imageInputRef.current.value;
@@ -27,7 +27,7 @@ function NewMeetupForm({ onAddMeetup }) {
 
   return (
     <Card>
-      <form className={classes.form} onSubmit={submitHanblder}>
+      <form className={classes.form} onSubmit={submitHandler}>
         <div className={classes.control}>
           <label htmlFor="title">Meetup Title</label>
           <input type="text" required id="title" ref={titleInputRef} />
