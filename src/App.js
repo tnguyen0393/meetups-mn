@@ -8,13 +8,13 @@ function App() {
   return (
     <Layout>
       <Switch>
-        <Route path="/" exact={true}>
+        <Route path="/meetups-mn/" exact={true}>
           <AllMeetupsPage />
         </Route>
-        <Route path="/new-meetup" exact={true}>
+        <Route path="/meetups-mn/new-meetup" exact={true}>
           <NewMeetupPage />
         </Route>
-        <Route path="/favorites" exact={true}>
+        <Route path="/meetups-mn/favorites" exact={true}>
           <FavoritesPage />
         </Route>
       </Switch>
