@@ -35,7 +35,7 @@ const AllMeetupsPage = () => {
         </section>
       );
     }
-  }, [isLoading]);
+  }, []);
 
   return (
     <section>
